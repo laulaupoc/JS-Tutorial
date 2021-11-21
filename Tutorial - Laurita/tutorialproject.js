@@ -110,7 +110,7 @@ function nextTopic() {
 function showGameOver() {
 	document.getElementById("currentTopicHeader").innerHTML = "GAMEOVER";
 	document.getElementById("currentTopicDescription").innerHTML =
-		"YOU ARE JAVASCRIPT MASTER";
+		"YOU ARE THE JAVASCRIPT MASTER";
 	document.getElementById("task").innerHTML = "";
 	document.getElementById("message").innerHTML = "";
 	document.getElementById("buttons").innerHTML = "";
