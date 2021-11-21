@@ -1,0 +1,66 @@
+<!-- Nils Beginning -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeItYourself</title>
+    <link rel="stylesheet" href="style - main/stylesheet.css">
+    <script  src="Dark Mode - Nils/script.js" defer></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="homepage.html">Introduction</a>
+        <a href="MakeItYourself.html">Darkmode - Do it yourself</a>
+        <a href="editor.html">Online Editor</a>
+        <a href="SourceCode.html">Source Code</a>
+        <a href="#darkmode" onclick="myFunction()">MY EYES! Darkmode</a>
+    </div>
+
+    <div>
+        <h1>Short ELI5 on making Darkmode</h1>
+        <h3>(ELI5 = explain like I'm five / 5)</h3>
+        <p>
+            In this area we are gonna show you how to make the Dark Mode feature on your own homepage in a few easy steps.
+            This dark mode feature is best if your using a "one pager" for the feature. If your having more than one site/sub sites on your homepage, it's a lot more difficult sadly.
+        </p>
+        <li>Step 1 : Make a standart html site and add a connection to a CSS file and make a script (javascript) ready. It should look like this:</li>
+        <img src="img/step-1.PNG" alt="step-1">
+        <li>Step 2 : Add a button, "a href="" " or any kind of button of your choice. Form this example we we use "a href".</li>
+        <li>Step 3 : Setting up dark mode in CSS.
+            <p>For setting up your CSS file, we need to specify what dark mode exactly is and how it should look so that we can make a reference later to the script file.
+                If we want to do it barebones, we only need to specify the background color and the text color for dark mode. For that we use "background-color" & "color". You can add some fancy features to if you want. We added a transition so it doesn't jsut pop but
+                takes .5 seconds to turn into dark mode. After you did that it should like this:
+            </p>
+            <img src="img/step-3.PNG" alt="step-3">
+        </li>
+        <li>Step 4 : Preparation for the dark mode script:</li>
+        <p>
+            for setting up the script we need to add some code to our button of choice and specify what it shall do. For that we need to add the "onclick" command and give it a name of our choice. Once that it done it should look like this:
+        </p>
+        <img src="img/step-4.PNG" alt="step-4">
+        <li>Step 5 : Setting up the script:</li>
+        <p>
+            Now that we have made the Preparation for the script, we now need to write it ourself. For that you need to use your javascript file your referenced to your html file.
+            For that we first need to make a function and add the name you gave your button. After that you you press enter and write "var" (variable) and write "element = document.body;". With that you specify that it will use this funvtion for your whole body in html.
+            Once you got that written, press enter. Then you need to specify what "element" is and what it does. For that you write "element.classList.toggle("dark-mode");" . That means that every time you press your button of choice it will either turn on/off dark mode.
+            Once completed your script should look like this:
+        </p>
+        <img src="img/step-5.PNG" alt="step-5">
+        <li>Step 6 : ???</li>
+        <p></p>
+        <li>Step 7 : Profit</li>
+        <p></p>
+        <li>Reminder !
+            <p>For this specific darkmode script, it always resets back to your non darkmode theme when you switch site via your navigation bar or refresh your site. You always need to manually toogle dark mode on your site to activate it.
+                Adding permanent dark mode to your homepage is more advanced, complicated & takes more time to setup than this. So for this we go the beginner route for now.
+            </p>
+        </li>
+    </div>
+    
+</body>
+</html>
+
+<!-- Nils End -->

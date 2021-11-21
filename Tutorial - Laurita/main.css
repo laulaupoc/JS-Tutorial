@@ -1,0 +1,100 @@
+
+/* Laurita beginning*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-image: url(https://media.giphy.com/media/UYBDCJjwOd9Re/source.gif);
+}
+
+/* topic's name's styling*/
+#currentTopicHeader{
+    text-align: left;
+    color: rgba(228, 228, 235, 0.747);
+} 
+
+/* to make gap between description and task*/
+#task{
+    margin-top: 10%;    
+}
+
+#currentTopicDescription, #task {
+    justify-content: center;
+    color: honeydew;
+} 
+
+/*hint and succes text-font color*/
+.hint{
+    color: red;  
+}
+.successMessage{
+    color: green;
+}
+
+.container{
+    align-items: center;
+    text-align: center;
+    max-width: 100vw;  
+}
+
+/*styling of explanation about the topic*/
+.description{
+    box-sizing: content-box;
+    padding: 2%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #f8fcf959;
+    background-color: rgba(240, 250, 255, 0.096);
+    font-size: x-large;
+}
+
+/*explanation about the topic styling, but where is examples, so it is more visible*/
+.difcol{
+    margin: 0 auto;
+    padding: 2%;
+    max-width: fit-content;
+    background-color: rgba(8, 8, 8, 0.548);
+    font-size: larger;
+    color: rgb(206, 104, 45);
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+/* quiz input styling*/
+input{
+    font-size: large;
+    margin-bottom: 1%;/* to make gaps between task*/
+    margin-top: 2%;/* to make gaps between task*/
+}
+/* font size of the label close to the input*/
+label{
+    font-size: x-large;
+}
+
+/* styling of the submit,next,preious buttons*/
+.buttons {
+    padding: 10px 25px;
+    margin:10px 20px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    border: 2px solid rgb(146, 148, 248);
+    overflow: hidden;
+    margin-bottom: 10%;
+}
+
+.buttons:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+/* Laurita end*/
