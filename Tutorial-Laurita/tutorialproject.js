@@ -80,20 +80,20 @@ function displaySuccessMessage(task) {
 }
 
 function hideMessage() {
-	//to hidden message, when it is not needed
+	//to hidden a message, when it is not needed
 	document.getElementById("message").innerHTML = "";
 }
 
 function nextTask() {
-	if (!currentTopicHasUnansweredQuestions()) {
+	if (!currentTopicHasUnansweredQuestions()) {//if current topic has not unanswered questions, call next topic function
 		nextTopic();
-	} else {
+	} else { // else display another task
 		incrementCurrentTaskIndex();
 		displayTask(currentTask());
 	}
 }
 
-function previousTask() {
+function previousTask() {//display previous unanswered task
 	decrimentCurrentTaskIndex();
 	displayTask(currentTask());
 }
@@ -101,13 +101,13 @@ function previousTask() {
 function nextTopic() {
 	currentTopicIndex++;
 	if (hasMoreTopics()) {
-		displayTopic(allTopics[currentTopicIndex]);
+		displayTopic(allTopics[currentTopicIndex]);//if there are topic unanswered, display it
 	} else {
-		showGameOver();
+		showGameOver(); //when there are no topics to show, call this function
 	}
 }
 
-function showGameOver() {
+function showGameOver() {// just to show that quiz is over, just like me by sitting here at 02:57am :)
 	document.getElementById("currentTopicHeader").innerHTML = "GAMEOVER";
 	document.getElementById("currentTopicDescription").innerHTML =
 		"YOU ARE THE JAVASCRIPT MASTER";
@@ -117,9 +117,9 @@ function showGameOver() {
 }
 
 function hasMoreTopics() {
-	return currentTopicIndex < allTopics.length;
+	return currentTopicIndex < allTopics.length;//check if there are any topics left
 }
 
-displayTopic(allTopics[currentTopicIndex]);
+displayTopic(allTopics[currentTopicIndex]);//beggining of the quiz. start
 
 //Laurita ends

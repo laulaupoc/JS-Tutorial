@@ -1,8 +1,9 @@
+//Laurita
 let variableTasks = [
 	{
 		id: 1,
 		taskContent:
-			"<div><h1>Which type of variables can not be re-declared while script is running?</h1> <label> Answer: </label><input id='input1'></input></div>",
+			"<div><h1>Which type of variables CAN NOT be re-declared while script is running?</h1> <label> Answer: </label><input id='input1'></input></div>",
 		hint: "<div class='hint'><p> hint: this variable is constant </p></div>",
 		successMessage: "<div class='successMessage'><p>Correct!</p></div>",
 		verifyFunction: () => {
@@ -38,7 +39,7 @@ let variableTasks = [
 	{
 		id: 4,
 		taskContent:
-			"<div><h1>Which variables can be used to declare a block-scope local variable?</h1> <label>Answer: </label><input id='input1'></input><label>Answer: </label><input id='input2'></input></div>",
+			"<div><h1>Which variables CAN BE used to declare a block-scope local variable?</h1> <label>Answer: </label><input id='input1'></input><label>Answer: </label><input id='input2'></input></div>",
 		hint: "<div class='hint'><p> There are two variables. </p></div>",
 		successMessage: "<div class='successMessage'><p>Correct!</p></div>",
 		verifyFunction: () => {
@@ -65,7 +66,7 @@ let operatorsTasks = [
 		id: 6,
 		taskContent:
 			"<div><h1>Assign values to variables and add them together</h1>  let x <input id='input1'></input> 5;<br> let y <input id='input2'> 2; <br> let z = x <input id='input3'></input> y;</div>",
-		hint: "<div class='hint'><p> Cia yra hintas </p></div>",
+		hint: "<div class='hint'><p> This should be a hint </p></div>",
 		successMessage: "<div class='successMessage'><p>Correct!</p></div>",
 		verifyFunction: () => {
 			const input1Correct = document.getElementById("input1").value === "=";
@@ -78,7 +79,7 @@ let operatorsTasks = [
 		id: 7,
 		taskContent:
 			"<div><h1>What of quoteOftoday current value is?</h1>  let quoteOftoday = 'what a very';<br><br>  quoteOftoday += 'nice evening'; <br><br> console.log(quoteOfToday) = <input id='input1'></input>;</div>",
-		hint: "<div class='hint'><p> Cia yra hintas </p></div>",
+		hint: "<div class='hint'><p> This should be a hint </p></div>",
 		successMessage: "<div class='successMessage'><p>Correct!</p></div>",
 		verifyFunction: () => {
 			const input1Correct =
@@ -90,7 +91,7 @@ let operatorsTasks = [
 		id: 8,
 		taskContent:
 			"<div><h1>Multiply 100 with 5, and alert the result:</h1> alert(100 <input id='input1'></input> 5);</div>",
-		hint: "<div class='hint'><p> Cia yra hintas </p></div>",
+		hint: "<div class='hint'><p> This should be a hint </p></div>",
 		successMessage: "<div class='successMessage'><p>Correct!</p></div>",
 		verifyFunction: () => {
 			const input1Correct = document.getElementById("input1").value === "*";
@@ -101,7 +102,7 @@ let operatorsTasks = [
 		id: 9,
 		taskContent:
 			"<div><h1>Divide 104 by 4, and alert the result:</h1> alert(104 <input id='input1'></input> 4);</div>",
-		hint: "<div class='hint'><p> Cia yra hintas </p></div>",
+		hint: "<div class='hint'><p> This should be a hint </p></div>",
 		successMessage:
 			"<div class='successMessage'><p>Correct, in Javascript you do this!</p></div>",
 		verifyFunction: () => {
@@ -113,7 +114,7 @@ let operatorsTasks = [
 		id: 10,
 		taskContent:
 			"<div><h1>Use the correct assignment operator that will result in x being 150 (same as x = x + y).</h1>  x = 50; <br><br>  y = 100; <br><br> x <input id='input1'></input> y </div>",
-		hint: "<div class='hint'><p> jis visada sika </p></div>",
+		hint: "<div class='hint'><p> This should be a hint </p></div>",
 		successMessage: "<div class='successMessage'><p>Correct!</p></div>",
 		verifyFunction: () => {
 			const input1Correct = document.getElementById("input1").value === "+=";
@@ -126,7 +127,7 @@ let dataTypesTasks = [
 		id: 11,
 		taskContent:
 			"<div><h1>Use comments to describe the correct data type of the following variables:</h1>  let x = 18;     // <input id='input1'></input><br><br>  let firstName = 'Laura'     // <input id='input2'> <br><br> const x = { firstName = 'Laura'; lastName = 'Davids'};     //<input id='input3'></input> </div>",
-		hint: "<div class='hint'><p> Cia yra hintas </p></div>",
+		hint: "<div class='hint'><p> This should be a hint </p></div>",
 		successMessage: "<div class='successMessage'><p>Correct!</p></div>",
 		verifyFunction: () => {
 			const input1Correct =
@@ -142,7 +143,7 @@ let dataTypesTasks = [
 		id: 12,
 		taskContent:
 			"<div><h1>Execute the function named addValue.</h1> function addValue (){<br> alert('Hello world!'); <br> } <br> <label> answer: <input id='input1'></input>; </div>",
-		hint: "<div class='hint'><p> Cia yra hintas </p></div>",
+		hint: "<div class='hint'><p> This should be a hint </p></div>",
 		successMessage:
 			"<div class='successMessage'><p>Correct, in Javascript you do this!</p></div>",
 		verifyFunction: () => {
@@ -155,7 +156,7 @@ let dataTypesTasks = [
 		id: 13,
 		taskContent:
 			"<div><h1>What is possible values for booleans?</h1><label> answer: <input id='input1'></input> and <input id='input2'></input></div>",
-		hint: "<div class='hint'><p> Cia yra hintas </p></div>",
+		hint: "<div class='hint'><p> This should be a hint </p></div>",
 		successMessage:
 			"<div class='successMessage'><p>Correct, in Javascript you do this!</p></div>",
 		verifyFunction: () => {
@@ -181,7 +182,7 @@ let dataTypesTasks = [
 		id: 15,
 		taskContent:
 			"<div><h1>JS Types are dynamic. What type of value x has in the first statement?</h1><label> 1. let x; <br><label> 2. x = 8; <br><label> 3. x = 'Laura'; <label> answer: <input id='input1'></input></div>",
-		hint: "<div class='hint'><p> jis visada sika </p></div>",
+		hint: "<div class='hint'><p> This should be a hint </p></div>",
 		successMessage:
 			"<div class='successMessage'><p>Correct, in Javascript you do this!</p></div>",
 		verifyFunction: () => {
@@ -221,12 +222,15 @@ let allTopics = [
 	{
 		name: "Operators",
 		tasks: operatorsTasks,
-		description: "<div class='description'><h3>lorem ipsum</h3></div>",
+		description:
+			"<div class='description'><h3>This should be an explanation about current topic.</h3></div>",
 	},
 
 	{
 		name: "Data types",
 		tasks: dataTypesTasks,
-		description: "<div class='description'><h3>lorem ipsum</h3></div>",
+		description:
+			"<div class='description'><h3>This should be an explanation about current topic.</h3></div>",
 	},
 ];
+//Laurita
